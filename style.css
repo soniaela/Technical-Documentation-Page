@@ -1,0 +1,150 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/*UNIVERSAL STYLES*/
+body {
+  color: white;
+  background-color: black;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.5;
+  
+}
+
+/*HEADERS*/
+header {
+  font-size: 1.8rem;
+}
+
+/*SIDEBAR HEADER*/
+.sidenav-container header {
+  text-align: center;
+}
+
+.sidenav-container {
+  height: 100%;
+  width: 13.6rem;
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 0.90rem;
+  padding-left: 0;
+  top: 0; /* Stay at the top */
+  z-index: 1; /* Stay on top */
+  border-right: 2px solid grey;
+  border-left: 2px solid grey;
+  
+  
+}
+
+/*This stretches the li's inside the ul all to the full width of the sidenav container*/
+#navbar ul {
+  padding: 0;
+}
+
+
+/**/
+#navbar li {
+  display: block;
+  border: 1px solid grey;
+  list-style: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 1rem;
+  text-align: center;
+  
+
+}
+
+
+
+#navbar a {
+  text-decoration: none;
+  color: white;
+  
+}
+
+#navbar a:hover, a:focus {
+  opacity: 0.60;
+}
+
+main {
+  padding-top: 30px;
+  margin-left: 15rem;
+  margin-right: 2rem;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  width: 70%;
+}
+
+table {
+  table-layout: fixed;
+  width: 80%;
+  padding: 5px;
+  margin: auto;
+  
+  
+
+}
+
+table, th, td {
+  border: 2px solid black;
+  border-collapse: collapse;
+  padding: 0.45rem;
+  color: black;
+}
+
+th, td {
+  background-color: #D4D4D4;
+}
+
+#empty-header {
+  background-color: black;
+}
+
+.header-row, .header-col {
+  background: #5E5E5E;
+  color: white;
+}
+
+
+
+td {
+  text-align: center;
+  
+}
+
+code {
+  display: block;
+  background-color: #D4D4D4;
+  padding: 0.45rem;
+  color: black;
+  
+}
+
+.main-section {
+  padding-top: 0.45rem;
+  padding-bottom: 0.45rem;
+}
+
+.main-section a {
+  color: blue;
+
+}
+
+.main-section a:hover {
+  color: yellow;
+
+}
+
+/*hide sidebar on small devices*/
+@media only screen and (max-width: 480px) {
+  .sidenav-container {
+    display: none;
+    
+  }
+
+  .main {
+    margin: 0;
+    
+  }
+
+}
