@@ -8,31 +8,32 @@
 
   <body>
 
-    <!-- SIDEBAR -->
-    <div class='sidenav-container'>
+    <!-- NAVBAR -->
+    
+    <!-- <div class='navbar-container'> -->
       <nav id='navbar'>
         <header> <!-- page header-->
-          <h1>Javascript Documentation</h1>
+          <h1>Baseball Documentation</h1>
         </header>
           <ul>
             <li><a class='nav-link' href='#Introduction'>Introduction</a></li>
-            <li><a class='nav-link' href='#What_you_should_already_know'>What you should already know</a></li>
-            <li><a class='nav-link' href='#Javascript_and_Java'>Javascript and Java</a></li>
-            <li><a class='nav-link' href='#Hello_world'>Hello world</a></li>
-            <li><a class='nav-link' href='#Variables'>Variables</a></li>
+            <li><a class='nav-link' href='#Sabernetics'>Sabernetics</a></li>
+            <li><a class='nav-link' href='#Batting_and_pitching'>Batting and pitching</a></li>
+            <li><a class='nav-link' href='#Fielding_independent_pitching_(FIP)'>Fielding independent pitching (FIP)</a></li>
+            <li><a class='nav-link' href='#Ultimate_zone_rating_(UZR)'>Ultimate zone rating (UZR)</a></li>
           
-          <li><a class='nav-link' href='#Declaring_variables'>Declaring variables</a></li>
-          <li><a class='nav-link' href='#Variable_scope'>Variable scope</a></li>
-          <li><a class='nav-link' href='#Global_variables'>Global variables</a></li>
-          <li><a class='nav-link' href='#Constants'>Constants</a></li>
-          <li><a class='nav-link' href='#Data_types'>Data types</a></li>
-          <li><a class='nav-link' href='#if...else_statement'>if...else statement</a></li>
-          <li><a class='nav-link' href='#while_statement'>while statement</a></li>
-          <li><a class='nav-link' href='#Function_declarations'>Function declarations</a></li>
+          <li><a class='nav-link' href='#Weighted_on-base_average_(wOBA)'>Weighted on-base average (wOBA)</a></li>
+          <li><a class='nav-link' href='#Wins_above_replacement_(WAR)'>Wins above replacement (WAR)</a></li>
+          <li><a class='nav-link' href='#Defensive_runs_saved_(DRS)'>Defensive runs saved (DRS)</a></li>
+          <li><a class='nav-link' href='#Pitching_fastballs'>Pitching fastballs</a></li>
+          <li><a class='nav-link' href='#Pitching_breaking_balls'>Pitching breaking balls</a></li>
+          <li><a class='nav-link' href='#Pitching_strategies'>Pitching strategies</a></li>
+          <li><a class='nav-link' href='#Hitting_strategies'>Hitting strategies</a></li>
+          <li><a class='nav-link' href='#Bunting'>Bunting</a></li>
           <li><a class='nav-link' href='#Reference'>Reference</a></li>
           </ul>
       </nav>
-    </div>
+    <!-- </div> -->
     
 
 
@@ -46,282 +47,276 @@
             <h2>Introduction</h2>
           </header>
         
-          <p>JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them.</p>
-          <p>JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example:</p>
+          <p>Baseball is a team sport played with a bat, a ball, and gloves. The objective of the game is to score runs by hitting the ball and running around a series of four bases that are arranged in a diamond shape on the field. The team that scores the most runs wins the game.</p>
+          <p>The field is divided into two halves, called the "inning," and in each half, one team (the offense) tries to score runs while the other team (the defense) tries to get outs. An out is recorded when a player on the defensive team gets a runner out by catching a hit ball on the fly, tagging a runner with the ball while the runner is not on a base, or forcing a runner to retreat to a base he has already passed. Each team gets three outs per half-inning, and a game consists of nine innings.</p>
+          <p>Statistics are an important part of baseball, as they provide a way to measure and compare the performance of players and teams. Some common statistical categories in baseball include:</p>
 
           <ul>
-            <li>Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such as mouse clicks, form input, and page navigation.</li>
-            <li>Server-side JavaScript extends the core language by supplying objects relevant to running JavaScript on a server. For example, server-side extensions allow an application to communicate with a database, provide continuity of information from one invocation to another of the application, or perform file manipulations on a server.</li>
+            <li><strong>Batting average:</strong> This is calculated by dividing the number of hits a player gets by their number of at-bats. It is expressed as a decimal, with a higher number indicating a better average.</li>
+            <li><strong>Runs batted in (RBIs):</strong> This is a statistic that measures how many runs a player has contributed to their team by hitting the ball and allowing runners to score.</li>
+            <li><strong>Home runs:</strong> This is a statistic that measures how many times a player has hit the ball over the fence for a home run.</li>
+            <li><strong>Earned run average (ERA):</strong> This is a statistic that measures how many runs a pitcher has allowed, on average, per nine innings pitched. A lower ERA indicates a better performance.</li>
+            <li><strong>Strikeouts:</strong> This is a statistic that measures how many times a pitcher has struck out a batter by throwing a pitch that the batter swings at and misses.</li>
           </ul>
+          <p>These are just a few examples of the many statistics that are used to evaluate the performance of players and teams in baseball. This guide will delve into more complex ones.</p>
           
         </article>
       </section>
       
-      <!-- WHAT YOU SHOULD ALREADY KNOW-->
-      <section class='main-section' id='What_you_should_already_know'>
+      <!-- SABERNETICS-->
+      <section class='main-section' id='Sabernetics'>
         <article>
           
           <header>
-            <h2>What you should already know</h2>
+            <h2>Sabernetics</h2>
           </header>
         
-          <p>This guide assumes you have the following basic background:</p>
+          <p>Sabernetics is a term that refers to the use of statistical analysis and data-driven decision-making in baseball. It is based on the principles of sabermetrics, a term coined by baseball statistician Bill James to describe the application of statistical analysis to baseball data.</p>
         <ol>
-            <li>A general understanding of the Internet and the World Wide Web (WWW).</li>
-            <li>Good working knowledge of HyperText Markup Language (HTML).</li>
-            <li>Some programming experience. If you are new to programming, try one of the tutorials linked on the main page about JavaScript.</li>
+            <li>It involves the collection and analysis of a wide range of data, including traditional statistics such as batting average and home runs, as well as more advanced metrics such as expected on-base percentage and defensive runs saved.</li>
+            <li>Many teams now employ full-time analysts and data scientists to help them analyze and interpret data and make informed decisions about their teams.</li>
+            <li>It has also sparked debates about the role of analytics in the sport and the balance between traditional baseball wisdom and data-driven decision-making.</li>
           </ol>
         </article>
         
       </section>
 
-      <!-- JAVASCRIPT AND JAVA-->
-      <section class='main-section' id='Javascript_and_Java'>
+      <!-- BATTING AND PITCHING-->
+      <section class='main-section' id='Batting_and_pitching'>
         <article>
           <header>
-            <h2>Javascript and Java</h2>
+            <h2>Batting and pitching</h2>
           </header>
         
-          <p>JavaScript and Java are similar in some ways but fundamentally different in some others. The JavaScript language resembles Java but does not have Java's static typing and strong type checking. JavaScript follows most Java expression syntax, naming conventions and basic control-flow constructs which was the reason why it was renamed from LiveScript to JavaScript.</p>
-        <p>In contrast to Java's compile-time system of classes built by declarations, JavaScript supports a runtime system based on a small number of data types representing numeric, Boolean, and string values. JavaScript has a prototype-based object model instead of the more common class-based object model. The prototype-based model provides dynamic inheritance; that is, what is inherited can vary for individual objects. JavaScript also supports functions without any special declarative requirements. Functions can be properties of objects, executing as loosely typed methods.</p>
-        <p>JavaScript is a very free-form language compared to Java. You do not have to declare all variables, classes, and methods. You do not have to be concerned with whether methods are public, private, or protected, and you do not have to implement interfaces. Variables, parameters, and function return types are not explicitly typed.</p>
+          <p>There are several key differences between batting and pitching statistics in baseball:</p>
+          <ol>
+            <li>Batting statistics measure a player's performance at the plate, while pitching statistics measure a player's performance on the mound.</li>
+            <li>Batting statistics include measures of a player's offensive performance, such as their batting average, home runs, runs batted in (RBIs), and on-base percentage. Pitching statistics include measures of a player's effectiveness at preventing runs, such as their earned run average (ERA), strikeouts, and walks and hits per inning pitched (WHIP).</li>
+            <li>Batting statistics are typically used to evaluate a player's offensive potential and ability to contribute to their team's scoring. Pitching statistics are used to evaluate a player's ability to prevent the other team from scoring and to help their team win games.</li>
+            <li>Batting statistics are typically based on a player's overall performance over the course of a season or career. Pitching statistics can be based on a player's performance in a single game or over the course of a season or career.</li>
+          </ol>
+       
         
           
         <!-- table -->  
         <table class='colapse'>
           <tr> <!-- defines a ROW of cells in a table, this is the 1st ROW -->
             <th id='empty-header'></th> <!-- EMPTY 1st row header-->
-            <th scope="col" class='header-row'>Javascript</th> <!-- 2nd column header-->
-            <th scope="col" class='header-row'>Java</th> <!-- 3rd column header-->
+            <th scope="col" class='header-row'>Batting</th> <!-- 2nd column header-->
+            <th scope="col" class='header-row'>Pitching</th> <!-- 3rd column header-->
           </tr> <!-- end of the 1st row-->
 
           <tr> <!-- 2nd ROW of cells in a table-->
-            <th scope="row" class='header-col'>Type of language</th> <!-- 2nd row header-->
-            <td>object based scripting language</td> <!-- data inside the cell when not doing a header-->
-            <td>OOP or Object-Oriented programming language</td> <!-- same as above-->
+            <th scope="row" class='header-col'>Scouting</th> <!-- 2nd row header-->
+            <td>Hitting ability, plate discipline, speed, fielding ability and mental toughness</td> <!-- data inside the cell when not doing a header-->
+            <td>Velocity, movement, control, durability, mental toughness and repertoire</td> <!-- same as above-->
           </tr> <!-- end of the 2nd row-->
           
           <tr> <!-- 3rd ROW of cells in a table-->
-            <th scope='row' class='header-col'>Compilation</th> <!-- 3rd row header-->
-            <td>Code is interpreted on the client's side (browser)</td> <!-- data inside the cell when not doing a header-->
-            <td>Code has to be compiled on the server before it is executed on the client side</td> <!-- same as above-->
+            <th scope='row' class='header-col'>Advantages of left-handed players</th> <!-- 3rd row header-->
+            <td>In certain defensive situations, left-handed batters may have an advantage because they are closer to first base and can get there more quickly to cover the bag on ground balls or throws from the outfield.</td> <!-- data inside the cell when not doing a header-->
+            <td>Can more easily field bunts and ground balls hit to the left side of the field; the ball breaks in a different direction, increasing strikes over right-handed batters</td> <!-- same as above-->
           </tr>
           
           <tr> <!-- 4th ROW of cells in a table-->
-            <th scope='row' class='header-col'>Extension</th> <!-- 4th row header-->
-            <td>.js</td> <!-- data inside the cell when not doing a header-->
-            <td>.java</td> <!-- same as above-->
+            <th scope='row' class='header-col'>Main stats</th> <!-- 4th row header-->
+            <td>BA, OBP, SP, RBI, HR, K, BB, OPS</td> <!-- data inside the cell when not doing a header-->
+            <td>ERA, K, WHIP, HRA, IP, OBA</td> <!-- same as above-->
           </tr>
           
-          <tr> <!-- 5th ROW of cells in a table-->
-            <th scope='row' class='header-col'>Memory</th> <!-- 5th row header-->
-            <td>Low consumption</td> <!-- data inside the cell when not doing a header-->
-            <td>High consumption</td> <!-- same as above-->
-          </tr>
           
-          <tr> <!-- 6th ROW of cells in a table-->
-            <th scope='row' class='header-col'>Storage</th> <!-- 6th row header-->
-            <td>Stored in host or client machine as 'source' code</td> <!-- data inside the cell when not doing a header-->
-            <td>Stored in client or host machine as 'byte' code</td> <!-- same as above-->
-          </tr>
-          
-          <tr> <!-- 7th ROW of cells in a table-->
-            <th scope='row' class='header-col'>Platform</th> <!-- 7th row header-->
-            <td>Dynamic and cross-platform</td> <!-- data inside the cell when not doing a header-->
-            <td>Static and cross-platform</td> <!-- same as above-->
-          </tr>
 </table>
 </article>
       </section>
 
-      <!-- HELLO WORLD -->
-      <section class='main-section' id='Hello_world'>
+      <!-- FIELDING INDEPENDENT PITCHING -->
+      <section class='main-section' id='Fielding_independent_pitching_(FIP)'>
         <article>
           <header>
-            <h2>Hello world</h2>
+            <h2>Fielding independent pitching (FIP)</h2>
           </header>
         
-        <p>To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:</p>
-        <p><code>function greetMe(yourName) { alert("Hello " + yourName); } greetMe("World");</code></p>
-        <p>Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!</p>
+        <p>This statistic measures a pitcher's effectiveness by looking at the outcomes of his pitches (e.g. strikeouts, walks, home runs) that are largely under his control, rather than the outcomes that are influenced by his defense. It is calculated using the following formula:</p>
+        <p><code>FIP = (13HR + 3(BB+HBP) - 2*K) / IP + constant</code></p>
+        <p>In this formula, HR represents home runs allowed, BB represents walks, HBP represents hit-by-pitches, K represents strikeouts, IP represents innings pitched, and constant is a constant that is used to scale the statistic to an ERA-like scale.</p>
+          <p>To calculate a pitcher's FIP, you would need to gather data on his home runs allowed, walks, hit-by-pitches, strikeouts, and innings pitched, and then plug those values into the formula. The constant is usually around 3.20, so you would add that value to the result of the formula to get the FIP.
+
+For example, if a pitcher allowed 10 home runs, walked 30 batters, was hit by 5 pitches, struck out 100 batters, and pitched 200 innings, his FIP would be calculated as follows:</p>
+          <p><code>FIP = (1310 + 3(30+5) - 2*100) / 200 + 3.20 = 3.70</code></p>
+          <p>This FIP value indicates that the pitcher was roughly as effective as a pitcher with an ERA of 3.70.</p>
         </article>
       </section>
 
-      <!-- VARIABLES -->
-      <section class='main-section' id='Variables'>
+      <!-- ULTIMATE ZONE RATING -->
+      <section class='main-section' id='Ultimate_zone_rating_(UZR)'>
         <article>
           <header>
-            <h2>Variables</h2>
+            <h2>Ultimate zone rating (UZR)</h2>
           </header>
         
-          <p>You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules.</p>
-          <p>A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($); subsequent characters can also be digits (0-9). Because JavaScript is case sensitive, letters include the characters "A" through "Z" (uppercase) and the characters "a" through "z" (lowercase).</p>
-          <p>You can use ISO 8859-1 or Unicode letters such as å and ü in identifiers. You can also use the Unicode escape sequences as characters in identifiers. Some examples of legal names are Number_hits, temp99, and _name.</p>
+          <p>Ultimate zone rating (UZR) is a statistic that measures a player's defensive value by estimating the number of runs he saved or cost his team based on his ability to field balls hit in his zone. It is calculated based on the location, trajectory, and velocity of balls hit in a player's defensive zone and how well he was able to convert those balls into outs or make plays on them.</p>
+          <p>To calculate a player's UZR, you would need access to data on the location, trajectory, and velocity of balls hit in his defensive zone, as well as data on how those balls were converted into outs or handled by the player. This data is typically collected by tracking systems or manually by analysts who watch video of the games.</p>
+          <p>Once you have this data, you can use statistical models and algorithms to estimate the number of runs a player saved or cost his team based on his fielding performance. These models take into account factors such as the probability of a ball being converted into an out based on its location and trajectory, as well as the expected value of a run based on the game situation.</p>
+
+<p>The resulting UZR value can be positive (indicating that the player saved runs for his team) or negative (indicating that he cost his team runs). A player's UZR can be compared to the league average to determine how much better or worse he is at fielding compared to the average player at his position.</p>
         </article>
       </section>
 
-      <!-- DECLARING VARIABLES -->
-      <section class='main-section' id='Declaring_variables'>
+      <!-- Weighted on-base average (wOBA) -->
+      <section class='main-section' id='Weighted_on-base_average_(wOBA)'>
         <article>
           <header>
-            <h2>Declaring variables</h2>
+            <h2>Weighted on-base average (wOBA)</h2>
           </header>
         
-          <p>You can declare a variable in three ways:</p>
-          <p>With the keyword var. For example,</p>
-          <code>var x = 42</code>
-          <p>This syntax can be used to declare both local and global variables.</p>
-          <p>By simply assigning it a value. For example,</p>
-          <code>x = 42</code>
-          <p>This always declares a global variable. It generates a strict JavaScript warning. You shouldn't use this variant.</p>
-          <p>With the keyword let. For example,</p>
-          <code>let y = 13</code>
-          <p>This syntax can be used to declare a block scope local variable. See Variable scope below.</p>
+          <p>Weighted on-base average (wOBA) is a statistic that measures a player's overall offensive value by weighting each type of offensive event (e.g. singles, doubles, home runs) based on its estimated run value. It is calculated using the following formula:</p>
+          
+          <code>wOBA = (0.69BB + 0.72HBP + 0.891B + 1.272B + 1.623B + 2.10HR) / (AB + BB - IBB + SF + HBP)</code>
+          <p>In this formula, BB represents walks, HBP represents hit-by-pitches, 1B represents singles, 2B represents doubles, 3B represents triples, HR represents home runs, AB represents at-bats, IBB represents intentional walks, and SF represents sacrifice flies.</p>
+          <p>To calculate a player's wOBA, you would need to gather data on his walks, hit-by-pitches, singles, doubles, triples, home runs, at-bats, intentional walks, and sacrifice flies, and then plug those values into the formula. The resulting wOBA value is expressed as a percentage and represents the player's estimated run value per plate appearance.</p>
+          <p>For example, if a player had 50 walks, 10 hit-by-pitches, 100 singles, 20 doubles, 5 triples, and 10 home runs, and had 400 at-bats, 5 intentional walks, and 5 sacrifice flies, his wOBA would be calculated as follows:</p>
+          
+          <code>wOBA = (0.6950 + 0.7210 + 0.89100 + 1.2720 + 1.625 + 2.1010) / (400 + 50 - 5 + 5 + 10) = 0.350</code>
+          <p>This wOBA value of 0.350 indicates that the player had an estimated run value of 0.350 runs per plate appearance. This value can be compared to the league average wOBA to determine how much better or worse the player is at generating runs compared to the average player.</p>
         </article>
       </section>
 
-      <!-- VARIABLE SCOPE -->
-      <section class='main-section' id='Variable_scope'>
+      <!-- Wins above replacement (WAR) -->
+      <section class='main-section' id='Wins_above_replacement_(WAR)'>
         <article>
           <header>
-            <h2>Variable scope</h2>
+            <h2>Wins above replacement (WAR)</h2>
           </header>
         
-          <p>When you declare a variable outside of any function, it is called a global variable, because it is available to any other code in the current document. When you declare a variable within a function, it is called a local variable, because it is available only within that function.</p>
-          <p>JavaScript before ECMAScript 2015 does not have block statement scope; rather, a variable declared within a block is local to the function (or global scope) that the block resides within. For example the following code will log 5, because the scope of x is the function (or global context) within which x is declared, not the block, which in this case is an if statement.</p>
-          <code>if (true) { var x = 5; } console.log(x); // 5</code>
-          <p>This behavior changes, when using the let declaration introduced in ECMAScript 2015.</p>
-          <code>if (true) { let y = 5; } console.log(y); // ReferenceError: y is
-not defined</code>
+          <p>Wins above replacement (WAR) is a statistic that attempts to measure a player's overall value to his team by estimating how many more wins a team would have with that player compared to a replacement-level player. It is calculated by combining a player's offensive and defensive contributions into a single value, with the goal of determining how much more or less valuable a player is compared to a hypothetical "replacement-level" player who is freely available to any team.</p>
+          <p>To calculate a player's WAR, you would need access to data on the player's offensive and defensive performance, as well as data on the performance of replacement-level players at the same position. This data can be gathered from various sources, such as baseball statistics databases and video analysis tools.</p>
+          
+          <p>Once you have this data, you can use statistical models and algorithms to estimate the number of runs a player contributed to his team based on his offense and defense. These runs can then be converted into wins using a conversion factor that takes into account the expected value of a run based on the game situation.</p>
+          <p>The resulting WAR value can be positive (indicating that the player contributed more value to his team than a replacement-level player) or negative (indicating that he contributed less value). A player's WAR can be compared to the league average to determine how much better or worse he is at contributing to his team's success compared to the average player at his position.</p>
         </article>
       </section>
 
-      <!-- GLOBAL VARIABLES -->
-      <section class='main-section' id='Global_variables'>
+      <!-- Defensive runs saved (DRS) -->
+      <section class='main-section' id='Defensive_runs_saved_(DRS)'>
         <article>
           <header>
-            <h2>Global variables</h2>
+            <h2>Defensive runs saved (DRS)</h2>
           </header>
         
-          <p>Global variables are in fact properties of the global object. In web pages the global object is window, so you can set and access global variables using the window.variable syntax.</p>
-          <p>Consequently, you can access global variables declared in one window or frame from another window or frame by specifying the window or frame name. For example, if a variable called phoneNumber is declared in a document, you can refer to this variable from an iframe as parent.phoneNumber.</p>
+          <p>Defensive runs saved (DRS) is a statistic that measures a player's defensive value by estimating the number of runs he saved or cost his team based on his fielding performance. It is calculated based on the location, trajectory, and velocity of balls hit in a player's defensive zone and how well he was able to convert those balls into outs or make plays on them.</p>
+          <p>To calculate a player's DRS, you would need access to data on the location, trajectory, and velocity of balls hit in his defensive zone, as well as data on how those balls were converted into outs or handled by the player. This data is typically collected by tracking systems or manually by analysts who watch video of the games.</p>
+          <p>Once you have this data, you can use statistical models and algorithms to estimate the number of runs a player saved or cost his team based on his fielding performance. These models take into account factors such as the probability of a ball being converted into an out based on its location and trajectory, as well as the expected value of a run based on the game situation.</p>
+          <p>The resulting DRS value can be positive (indicating that the player saved runs for his team) or negative (indicating that he cost his team runs). A player's DRS can be compared to the league average to determine how much better or worse he is at fielding compared to the average player at his position.</p>
         </article>
       </section>
 
-      <!-- CONSTANTS -->
-      <section class='main-section' id='Constants'>
+      <!-- Pitching fastballs -->
+      <section class='main-section' id='Pitching_fastballs'>
         <article>
           <header>
-            <h2>Constants</h2>
+            <h2>Pitching fastballs</h2>
            </header>
         
-          <p>You can create a read-only, named constant with the const keyword. The syntax of a constant identifier is the same as for a variable identifier: it must start with a letter, underscore or dollar sign and can contain alphabetic, numeric, or underscore characters.</p>
-          <code>const PI = 3.14;</code>
-          <p>A constant cannot change value through assignment or be re-declared while the script is running. It has to be initialized to a value.</p>
-          <p>The scope rules for constants are the same as those for let block scope variables. If the const keyword is omitted, the identifier is assumed to represent a variable.</p>
-          <p>You cannot declare a constant with the same name as a function or variable in the same scope. For example:</p>
-          <code>// THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS
-WILL CAUSE AN ERROR ALSO function f() { const g = 5; var g;
-//statements }</code>
-<p>However, object attributes are not protected, so the following statement is executed without problems.</p>
-<code>const MY_OBJECT = {"key": "value"}; MY_OBJECT.key =
-"otherValue";</code>
+          <p>A fastball is a type of pitch that is thrown with high velocity and is designed to be difficult for the batter to hit. Pitchers may use fastballs in a variety of situations, depending on their specific pitching style and the strengths and weaknesses of the batter they are facing.</p>
+          
+          <p>Some common situations in which a pitcher might use a fastball include:</p>
+          <ol>
+            <li><em>When he is ahead in the count:</em> If a pitcher has already thrown a couple of strikes and is ahead in the count, he may try to throw a fastball to get ahead even further and increase his chances of getting the batter out.</li>
+            <li><em>When he needs to throw a strike:</em> If a pitcher is struggling to throw strikes or is in a situation where he needs to throw a strike (e.g. runners on base), he may use a fastball to try to throw a strike and get back into the count.</li>
+            <li><em>When he is trying to get a strikeout:</em> A fastball can be an effective pitch for getting strikeouts, especially if it has late movement or good velocity. A pitcher may use a fastball to try to blow it past the batter or to set up another pitch.</li>
+            <li><em>When he is trying to establish his fastball:</em> A pitcher may use a fastball early in the game to establish his fastball as a weapon and make it harder for the batter to anticipate his off-speed pitches later in the game.</li>
+            <li><em>When he is trying to set up another pitch:</em> A pitcher may use a fastball to try to get the batter to swing and miss or to make weak contact, setting up a better chance to throw an off-speed pitch or breaking ball later in the at-bat.</li>
+            <li><em>When he is struggling with his positioning:</em> Because a fastball is thrown with higher velocity, there is typically a greater margin for error when throwing it. A pitcher may be able to get away with throwing a fastball slightly off target because the batter may not have time to adjust his swing.</li>
+          </ol>
         </article>
       </section>
 
-      <!-- DATA TYPES -->
-      <section class='main-section' id='Data_types'>
+      <!-- Pitching_breaking_balls -->
+      <section class='main-section' id='Pitching_breaking_balls'>
         <article>
           <header>
-            <h2>Data types</h2>
+            <h2>Pitching breaking balls</h2>
               </header>
         
-          <p>The latest ECMAScript standard defines seven data types:</p>
+          <p>A breaking ball is a pitch that breaks or changes direction as it approaches the plate. There are several types of breaking balls, including curveballs, sliders, and changeups. These pitches can be effective when used at the right time and in the right situation.</p>
+          <p>One common time to use a breaking ball is when a pitcher is ahead in the count and wants to put a hitter away. A breaking ball can be difficult for a hitter to hit when thrown with good movement and location, and it can be especially effective if the hitter is expecting a fastball.</p>
+          <p>Breaking balls are a good strategy when runners are on base, as the lower velocity of a hit will stop them from stealing bases or from reaching first base.</p>
+          <p>Another time to use a breaking ball is when a pitcher is behind in the count and needs to throw a pitch that will disrupt the timing of the hitter. A well-placed breaking ball can cause the hitter to swing and miss or to hit a weak ground ball.</p>
+          <p>Finally, a breaking ball can be a useful pitch to use when a pitcher is facing a hitter who has had success against fastballs. Throwing a breaking ball in a fastball count can keep the hitter off balance and make it more difficult for them to make solid contact.</p>
+          <p>It's important to note that breaking balls can be difficult for pitchers to control and can be less effective if they are not thrown with good movement and location. As such, pitchers should use breaking balls judiciously and be prepared to throw them in a variety of different counts and situations.
+
+
+
+
+</p>
           <ul>
-            <li>Six data types that are primitives:</li>
+            <li>Types of breaking balls:</li>
             <ul>
-              <li>Boolean. true and false.</li>
-              <li>null. A special keyword denoting a null value. Because JavaScript is case-sensitive, null is not the same as Null, NULL, or any other variant.</li>
-              <li>undefined. A top-level property whose value is undefined.</li>
-              <li>Number. 42 or 3.14159.</li>
-              <li>String. "Howdy"</li>
-              <li>Symbol (new in ECMAScript 2015). A data type whose instances are unique and immutable.</li>
+              <li><strong>Curveballs:</strong> A curveball is a pitch that breaks downward as it approaches the plate. It is thrown with a special grip and released in such a way that the ball rotates more slowly than a fastball, causing it to break sharply.</li>
+              <li><strong>Sliders:</strong> A slider is a pitch that breaks sharply to the side as it approaches the plate. It is thrown with a grip similar to a fastball but with more pressure on the fingertips, causing the ball to spin more rapidly and break sharply.</li>
+              <li><strong>Changeups:</strong> A changeup is a pitch that is thrown with a slower velocity than a fastball and with a different grip that causes the ball to break or change direction slightly. Changeups are often used to disrupt the timing of the hitter and can be especially effective when thrown with good deception.</li>
+              <li><strong>Knuckleballs:</strong> A knuckleball is a pitch that is thrown with a special grip that causes the ball to spin very little as it approaches the plate. This lack of spin causes the ball to move erratically and can make it difficult for hitters to make solid contact.</li>
+             
             </ul>
-            <li>and Object</li>
+            
           </ul>
-          <p>Although these data types are a relatively small amount, they enable you to perform useful functions with your applications. Objects and functions are the other fundamental elements in the language. You can think of objects as named containers for values, and functions as procedures that your application can perform.</p>
+          
         </article>
       </section>
 
-      <!-- IF ELSE STATEMENTS -->
-      <section class='main-section' id='if...else_statement'>
+      <!-- Pitching strategies -->
+      <section class='main-section' id='Pitching_strategies'>
         <article>
           <header>
-            <h2>if...else statement</h2>
+            <h2>Pitching strategies</h2>
           </header>
         
-          <p>Use the if statement to execute a statement if a logical condition is true. Use the optional else clause to execute a statement if the condition is false. An if statement looks as follows:</p>
-          <code>if (condition) { statement_1; } else { statement_2; }</code>
-          <p>condition can be any expression that evaluates to true or false. See Boolean for an explanation of what evaluates to true and false. If condition evaluates to true, statement_1 is executed; otherwise, statement_2 is executed. statement_1 and statement_2 can be any statement, including further nested if statements.</p>
-          <p>You may also compound the statements using else if to have multiple conditions tested in sequence, as follows:</p>
-          <code>if (condition_1) { statement_1; } else if (condition_2) {
-statement_2; } else if (condition_n) { statement_n; } else {
-statement_last; }</code>
-<p>In the case of multiple conditions only the first logical condition which evaluates to true will be executed. To execute multiple statements, group them within a block statement ({ ... }) . In general, it's good practice to always use block statements, especially when nesting if statements:</p>
-<code>if (condition) { statement_1_runs_if_condition_is_true;
-statement_2_runs_if_condition_is_true; } else {
-statement_3_runs_if_condition_is_false;
-statement_4_runs_if_condition_is_false; }</code>
-<p>It is advisable to not use simple assignments in a conditional expression, because the assignment can be confused with equality when glancing over the code. For example, do not use the following code:</p>
-<code>if (x = y) { /* statements here */ }</code>
-<p>If you need to use an assignment in a conditional expression, a common practice is to put additional parentheses around the assignment. For example:</p>
-<code>if ((x = y)) { /* statements here */ }</code>
-        </article>
-      </section>
-
-      <!-- WHILE STATEMENT -->
-      <section class='main-section' id='while_statement'>
-        <article>
-          <header>
-            <h2>while statement</h2>
-          </header>
-        
-          <p>A while statement executes its statements as long as a specified condition evaluates to true. A while statement looks as follows:</p>
-          <code>while (condition) statement</code>
-          <p>If the condition becomes false, statement within the loop stops executing and control passes to the statement following the loop.</p>
-          <p>The condition test occurs before statement in the loop is executed. If the condition returns true, statement is executed and the condition is tested again. If the condition returns false, execution stops and control is passed to the statement following while.</p>
-          <p>To execute multiple statements, use a block statement ({ ... }) to group those statements.</p>
-          <p>Example:</p>
-          <p>The following while loop iterates as long as n is less than three:</p>
-          <code>var n = 0; var x = 0; while (n < 3) { n++; x += n; }</code>
-          <p>With each iteration, the loop increments n and adds that value to x. Therefore, x and n take on the following values:</p>
+          <p>There are many different pitching strategies that a pitcher or coach may use in baseball. Some common strategies include:</p>
           <ul>
-            <li>After the first pass: n = 1 and x = 1</li>
-            <li>After the second pass: n = 2 and x = 3</li>
-            <li>After the third pass: n = 3 and x = 6</li>
+            <li><em>Throwing fastballs early in the count:</em> A pitcher may throw fastballs early in the count to try to get ahead of the hitter and establish control. Throwing a fastball on the first pitch is often a good way to do this, as it can be difficult for a hitter to get a good read on the pitch and can put pressure on the hitter to make contact.</li>
+            <li><em>Changing speeds:</em> A pitcher may throw pitches at different speeds in order to disrupt the timing of the hitter. For example, a pitcher may throw a fastball followed by a changeup in order to keep the hitter off balance.</li>
+            <li><em>Throwing breaking balls in fastball counts:</em> A pitcher may throw a breaking ball in a fastball count in order to surprise the hitter and disrupt their timing. This can be especially effective if the hitter is expecting a fastball and is caught off guard by a breaking ball.</li>
+            <li><em>Working the corners of the plate:</em> A pitcher may aim to throw pitches on the edges of the strike zone in order to make it difficult for the hitter to make solid contact. This can be especially effective if the pitcher can consistently throw strikes in these areas.</li>
+            <li><em>Pitching to contact:</em> Some pitchers may focus on getting batters to put the ball in play rather than trying to strike them out. This can be a good strategy if the pitcher has a strong defense behind them or if the opposing team has weak hitters.</li>
           </ul>
-          <p>After completing the third pass, the condition n < 3 is no longer true, so the loop terminates.</p>
         </article>
       </section>
 
-      <!-- FUNCTION DECLARATIONS -->
-      <section class='main-section' id='Function_declarations'>
+      <!-- Hitting strategies -->
+      <section class='main-section' id='Hitting_strategies'>
+        <article>
+          <header>
+            <h2>Hitting strategies</h2>
+          </header>
+        
+          <p>There are many different hitting strategies that a player or coach may use in baseball. Some common strategies include:</p>
+          
+          <ul>
+            <li><em>Looking for a specific pitch:</em> A hitter may have a preference for a particular pitch or type of pitch and may look for that pitch in specific counts or situations. For example, a hitter may be more likely to swing at a fastball when they are behind in the count.</li>
+            <li><em>Hitting the ball the other way:</em> A hitter may try to hit the ball to the opposite field (i.e., the side of the field opposite their natural hitting side) in order to take advantage of the defensive alignment of the opposing team. This can be a good strategy for hitting with runners on base or for avoiding defensive shifts.</li>
+            <li><em>Trying to hit the ball hard:</em> Some hitters may try to hit the ball as hard as possible in order to generate extra base hits or home runs. This can be a good strategy if the hitter has power, but it can also increase the chances of making an out if the hitter swings and misses or hits a fly ball that is caught by the defense.</li>
+            <li><em>Being selective at the plate:</em> Some hitters may try to take pitches and wait for a pitch that they can hit hard. This can be a good strategy for hitters who have a good eye and can recognize pitches well, but it can also result in more strikeouts if the hitter is unable to make contact with good pitches.</li>
+            <li><em>Hitting and running:</em> Some teams may use a strategy known as "hit and run" in which a runner on base will take off for the next base as soon as the pitch is thrown. The hitter's job is to make contact and try to hit the ball through the hole left by the runner's absence. This can be a good strategy for creating scoring opportunities, but it also increases the chances of making an out if the hitter doesn't make contact or hits the ball to the wrong part of the field.</li>
+          </ul>
+           
+        </article>
+      </section>
+
+      <!-- Bunting -->
+      <section class='main-section' id='Bunting'>
         <article>
         <header>
-          <h2>Function declarations</h2>
+          <h2>Bunting</h2>
           </header>
         
-          <p>A function definition (also called a function declaration, or function statement) consists of the function keyword, followed by:</p>
+          <p>Bunting is a hitting strategy in which a hitter tries to tap the ball a short distance in front of home plate in order to advance a runner or to reach base themselves. There are a few different situations in which bunting might be used:</p>
           <ul>
-            <li>The name of the function.</li>
-            <li>A list of arguments to the function, enclosed in parentheses and separated by commas.</li>
-            <li>The JavaScript statements that define the function, enclosed in curly brackets, { }.</li>
+            <li><em>To advance a runner:</em> A team may use bunting to try to move a runner from first to second base or from second to third base. This can be a good strategy if the team has a fast runner who can advance quickly or if the team is trying to score a runner from third base.</li>
+            <li><em>To move a runner into scoring position:</em> A team may use bunting to try to move a runner into scoring position, such as from first to second base with no outs. This can be a good strategy if the team is trying to score a runner from third base or if the team has a hitter who is capable of driving in a run with a hit.</li>
+            <li><em>To sacrifice an out:</em> A team may use bunting to sacrifice an out in order to advance a runner or to move a runner into scoring position. This can be a good strategy if the team is trailing in the game and needs to score runs quickly, or if the team is facing a pitcher who is difficult to hit.</li>
+            <li><em>To surprise the defense:</em> A team may use bunting as a surprise tactic in order to catch the defense off guard. This can be a good strategy if the defense is expecting a hitter to swing away and is not anticipating a bunt.</li>
           </ul>
-          <p>For example, the following code defines a simple function named square:</p>
-          <code>function square(number) { return number * number; }</code>
-          <p>The function square takes one argument, called number. The function consists of one statement that says to return the argument of the function (that is, number) multiplied by itself. The return statement specifies the value returned by the function.</p>
-          <code>return number * number;</code>
-          <p>Primitive parameters (such as a number) are passed to functions by value; the value is passed to the function, but if the function changes the value of the parameter, this change is not reflected globally or in the calling function.</p>
+         
         </article>
       </section>
 
@@ -333,7 +328,7 @@ statement_4_runs_if_condition_is_false; }</code>
           </header>
         
           <ul>
-            <li>All the documentation in this page in this page is taken from <a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide' target='_blank'>MDN</a></li>
+            <li>All the documentation in this page is taken from <a href='https://chat.openai.com/chat' target='_blank'>ChatGPT</a></li>
           </ul>
         </article>
       </section>
