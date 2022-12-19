@@ -3,38 +3,46 @@
 }
 
 /*UNIVERSAL STYLES*/
-body {
+html, body {
   color: white;
   background-color: black;
   font-family: 'Arial', sans-serif;
   line-height: 1.5;
+  /*addition for achieving responsiveness*/
+  min-width: 290px; 
   
 }
 
 /*HEADERS*/
-header {
+header h2 {
   font-size: 1.8rem;
 }
 
-/*SIDEBAR HEADER*/
-.sidenav-container header {
+/*NAVBAR HEADER*/
+#navbar header {
+  font-size: 1rem;
   text-align: center;
+  
+  
 }
 
-.sidenav-container {
-  height: 100%;
-  width: 13.6rem;
+header h1 {
+  margin: 20px;
+}
+
+#navbar {
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 0.90rem;
-  padding-left: 0;
-  top: 0; /* Stay at the top */
-  z-index: 1; /* Stay on top */
+  height: 100%;
+  min-width: 290px;
+  width: 300px;
+  top: 0px; /*Stay on the top*/
+  left: 0px; /*Stay on the left*/
   border-right: 2px solid grey;
-  border-left: 2px solid grey;
+  
   
   
 }
+
 
 /*This stretches the li's inside the ul all to the full width of the sidenav container*/
 #navbar ul {
@@ -42,48 +50,86 @@ header {
 }
 
 
-/**/
+/*EVERY LI ELEMENT IN NAVBAR*/
 #navbar li {
   display: block;
-  border: 1px solid grey;
+  border-top: 1px solid grey;
   list-style: none;
   padding-top: 5px;
   padding-bottom: 5px;
   font-size: 1rem;
   text-align: center;
+  border-left: hidden;
   
 
 }
 
 
-
+/*LINKS INSIDE NAVBAR*/
 #navbar a {
   text-decoration: none;
   color: white;
   
 }
 
+
+/*CHANGE STYLE OF LINKS WHEN HOVERING OVER THEM OR CLICKING THEM*/
 #navbar a:hover, a:focus {
   opacity: 0.60;
 }
 
+/*SIDEBAR BECOMES TOPBAR ON smaller screens*/
+@media only screen and (max-width: 815px) {
+  #navbar {
+    
+    position: absolute;
+    overflow-y: scroll;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 256px;
+    z-index: 1;
+    border-bottom: 2px solid;
+    
+    } 
+  
+}
+
+
+/*MAIN STYLING*/
+
 main {
+  display: block;
+  position: absolute;
   padding-top: 30px;
-  margin-left: 15rem;
+  margin-left: 310px;
   margin-right: 2rem;
   overflow-x: hidden; /* Disable horizontal scroll */
   width: 70%;
 }
+
+/*CHANGES NEEDED ON THE MAIN CONTENT WHEN THE SIDEBAR BECOMES TOPBAR*/
+@media only screen and (max-width: 815px) {
+  main {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 270px;
+    width: 100%;
+    }
+  
+}
+
 
 table {
   table-layout: fixed;
   width: 80%;
   padding: 5px;
   margin: auto;
-  
-  
 
 }
+
+
 
 table, th, td {
   border: 2px solid black;
@@ -106,19 +152,21 @@ th, td {
 }
 
 
-
 td {
   text-align: center;
   
 }
 
-code {
-  display: block;
-  background-color: #D4D4D4;
-  padding: 0.45rem;
-  color: black;
-  
+/*TABLE NEEDS TO BE ADJUSTED ON SMALLER SCREENS so the text doesn't overflow*/
+@media only screen and (max-width: 815px) {
+  table {
+    width: 100%;
+    font-size: 11px;
+    overflow: hidden;
+    
+  }
 }
+
 
 .main-section {
   padding-top: 0.45rem;
@@ -135,16 +183,12 @@ code {
 
 }
 
-/*hide sidebar on small devices*/
-@media only screen and (max-width: 480px) {
-  .sidenav-container {
-    display: none;
-    
-  }
-
-  .main {
-    margin: 0;
-    
-  }
-
+code {
+  display: block;
+  background-color: #D4D4D4;
+  padding: 0.45rem;
+  color: black;
+  
 }
+
+
